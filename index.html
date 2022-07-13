@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Calculator</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div>
+        <p class="heading">Calculator</p>
+    </div>
+    <div class="flex-container-column card">
+        <div class="display">
+            <h1 id="displayNumber">
+                0
+            </h1>
+        </div>
+        <div class="flex-container-row">
+            <div class="button operator">|x|</div>
+            <div class="button operator">x^2</div>
+            <div class="button operator">x^3</div>
+            <div class="button operator">/</div>
+        </div>
+        <div class="flex-container-row">
+            <div class="button operator">ln</div>
+            <div class="button operator">log</div>
+            <div class="button operator">1/x</div>
+            <div class="button operator">*</div>
+        </div>
+        <div class="flex-container-row">
+            <div class="button operator">sin</div>
+            <div class="button operator">cos</div>
+            <div class="button operator">tan</div>
+            <div class="button operator">sqrt</div>
+        </div>
+        <div class="flex-container-row">
+            <div class="button">7</div>
+            <div class="button">8</div>
+            <div class="button">9</div>
+            <div class="button negative">+/-</div>
+        </div>
+        <div class="flex-container-row">
+            <div class="button">4</div>
+            <div class="button">5</div>
+            <div class="button">6</div>
+            <div class="button operator">-</div>
+        </div>
+        <div class="flex-container-row">
+            <div class="button">1</div>
+            <div class="button">2</div>
+            <div class="button">3</div>
+            <div class="button operator">+</div>
+        </div>
+        <div class="flex-container-row">
+            <div class="button clear">Clear</div>
+            <div class="button">0</div>
+            <div class="button equals double">=</div>
+        </div>
+    </div>
+
+    <div class="history card">
+        <h2>History</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Operand</th>
+                    <th>Operator</th>
+                    <th>Operand</th>
+                    <th>Result</th>
+                </tr>
+            </thead>
+            <tbody id="historyList"></tbody>
+        </table>
+    </div>
+
+    <div>
+        <p class="center">Copyright 2022 - Peepo</p>
+    </div>
+
+    <script src="storage.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
